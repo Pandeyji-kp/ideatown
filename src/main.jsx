@@ -1,3 +1,4 @@
+// index.jsx (or main.jsx)
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -9,17 +10,21 @@ import GrowthHero from "./App.jsx";
 import AboutUs from "./components/AboutUs.jsx";
 import ContactUs from "./components/ContactUs.jsx";
 import GoogleFormApply from "./components/GoogleFormApply.jsx";
+import ScrollToTop from "./ScrollToTop.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter>
+      {/* Scroll management: must be inside BrowserRouter */}
+      <ScrollToTop behavior="auto" />
+
       <NavbarStyled />
 
       <Routes>
         <Route path="/" element={<GrowthHero />} />
         <Route path="/about-us" element={<AboutUs />} />
-         <Route path="/contact-us" element={<ContactUs />} />
-         <Route path="/google" element={<GoogleFormApply />} />
+        <Route path="/contact-us" element={<ContactUs />} />
+        <Route path="/google" element={<GoogleFormApply />} />
       </Routes>
 
       <Footer />

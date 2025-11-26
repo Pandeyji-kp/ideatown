@@ -141,7 +141,7 @@ export default function GrowthHero({
       <section
         className="relative bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: "url('public/pngtree-abstract-white-paper-waves-elegant-3d-background-design-image_17348794.jpg')", // CHANGE IMAGE
+          backgroundImage: "url('/pngtree-abstract-white-paper-waves-elegant-3d-background-design-image_17348794.jpg')", // CHANGE IMAGE
         }}
       >
         {/* overlay */}
@@ -199,7 +199,7 @@ export default function GrowthHero({
       <section
         className="relative bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: "url('public/pngtree-orange-wave-abstract-background-picture-image_1455036.jpg')", // CHANGE IMAGE
+          backgroundImage: "url('/pngtree-orange-wave-abstract-background-picture-image_1455036.jpg')", // CHANGE IMAGE
         }}
       >
         {/* overlay */}
