@@ -1,6 +1,7 @@
 // AboutUs.jsx
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 export default function AboutUs({
     bgUrl = "/public/2f77e8bc2816c2ca68090d76ab8d7d26.jpg",
@@ -28,7 +29,7 @@ export default function AboutUs({
                     specific needs and long-term vision.
                 </>
             ),
-            image: "public/aad56012be20badfec41abdffd7af819.jpg",
+            image: "/public/aad56012be20badfec41abdffd7af819.jpg",
         },
         {
             title: "A Proven Track Record",
@@ -80,7 +81,7 @@ export default function AboutUs({
                     Our investment philosophy is built around encouraging entrepreneurship, fostering innovation, generating employment, and contributing to long-term economic growth. Above all, we are committed to empowering businesses to reach their full potential and play a transformative role in building a brighter future for everyone.
                 </>
             ),
-            image: "public/4e6b7e8783e67d822419b8577ec16e86.jpg",
+            image: "/public/4e6b7e8783e67d822419b8577ec16e86.jpg",
         },
         {
             title: "Highly experienced team of professionals",
@@ -93,7 +94,7 @@ export default function AboutUs({
                     We look forward to introducing prospective partners to our leadership team <b>once they have completed the business proposal form</b> (insert hyperlink here) and have been shortlisted for further consideration.
                 </>
             ),
-            image: "public/80a54a73303bdf456eeb3b4d460328a2.jpg",
+            image: "/public/80a54a73303bdf456eeb3b4d460328a2.jpg",
         },
 
         {
@@ -165,12 +166,12 @@ export default function AboutUs({
 
 
                         {/* CTA */}
-                        <a
-                            href="/google"
+                        <Link
+                            to="/google"
                             className="mt-8 inline-flex items-center justify-center px-7 py-3.5 rounded-xl font-semibold text-white bg-gradient-to-r from-orange-400 to-orange-500 shadow-lg hover:shadow-[0_12px_30px_rgba(249,115,22,0.35)] transition duration-200 transform-gpu hover:-translate-y-1"
                         >
                             Apply Now →
-                        </a>
+                        </Link>
                     </div>
                 </div>
 
@@ -264,12 +265,12 @@ export default function AboutUs({
                                     {/* CTA only on last item */}
                                     {idx === items.length - 1 && (
                                         <div className="mt-8 text-center md:text-left">
-                                            <a
-                                                href="/google"
+                                            <Link
+                                                to="/google"
                                                 className="inline-flex items-center px-6 py-3 bg-black text-white font-semibold rounded-lg shadow hover:bg-slate-900 transition"
                                             >
                                                 Get Started →
-                                            </a>
+                                            </Link>
                                         </div>
                                     )}
                                 </motion.div>

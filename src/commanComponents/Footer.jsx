@@ -1,5 +1,6 @@
 // Footer.jsx
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -40,8 +41,8 @@ export default function Footer() {
 
               {/* CTA */}
               <div className="flex-shrink-0">
-                <a
-                  href="/google"
+                <Link
+                  to="/google"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-3 px-6 py-3 rounded-full bg-gradient-to-r from-[#0ea5a4] to-[#ff7a66] text-white font-semibold shadow-lg hover:scale-[1.02] transition-transform"
@@ -50,7 +51,7 @@ export default function Footer() {
                   <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                     <path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M5 12h14M12 5l7 7-7 7" />
                   </svg>
-                </a>
+                </Link>
               </div>
             </div>
           </div>

@@ -1,5 +1,6 @@
 // GrowthHero.jsx
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 /**
  * GrowthHero.jsx
@@ -97,15 +98,15 @@ export default function GrowthHero({
 
             {/* CTA */}
             <div className="mt-8 flex justify-center">
-              <a
-                href="/business-proposals"
+              <Link
+                to="/google"
                 className="inline-flex items-center gap-3 px-6 py-3 rounded-md bg-black text-white font-semibold shadow-xl hover:scale-[1.02] transition-transform"
               >
                 Submit Your Proposal
                 <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                   <path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M5 12h14M12 5l7 7-7 7" />
                 </svg>
-              </a>
+              </Link>
             </div>
 
             {/* stats row */}

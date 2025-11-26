@@ -1,5 +1,6 @@
 // StylishGoogleFormApply.jsx
 import React, { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 
 /**
  * StylishGoogleFormApply
@@ -97,7 +98,7 @@ export default function StylishGoogleFormApply() {
 
                         {/* BACKGROUND WAVE IMAGE */}
                         <img
-                            src="public/pngtree-white-textured-design-over-a-gradient-orange-background-image_13905315.png"  // <-- change to your image path
+                            src="/public/pngtree-white-textured-design-over-a-gradient-orange-background-image_13905315.png"  // <-- change to your image path
                             alt="Wave Background"
                             className="absolute inset-0 w-full h-full object-cover object-center"
                         />
@@ -206,12 +207,12 @@ export default function StylishGoogleFormApply() {
                             </p>
 
                             <div className="mt-4 flex items-center gap-3">
-                                <a
-                                    href="/"
+                                <Link
+                                    to="/"
                                     className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-slate-100 text-slate-700 hover:bg-slate-200 transition"
                                 >
                                     Back to homepage
-                                </a>
+                                </Link>
                                 <button
                                     onClick={() => setShowThanks(false)}
                                     className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-orange-400 to-orange-500 text-white transition"
