@@ -93,9 +93,8 @@ export default function NavbarStyled({
               <Link
                 key={m.id}
                 to={m.to}
-                className={`text-sm font-medium transition ${
-                  scrolled ? "text-slate-900 hover:text-slate-700" : "text-black"
-                }`}
+                className={`text-sm font-medium transition ${scrolled ? "text-slate-900 hover:text-slate-700" : "text-black"
+                  }`}
               >
                 {m.title}
               </Link>
@@ -133,13 +132,18 @@ export default function NavbarStyled({
 
       {/* Mobile Menu */}
       {open && (
-        <div className="md:hidden bg-white border-t border-gray-100" role="dialog" aria-modal="true">
+        <div
+          className="md:hidden bg-white border-t border-gray-100"
+          role="dialog"
+          aria-modal="true"
+        >
           <div className="flex flex-col px-4 py-4">
+
             {menu.map((m) => (
               <Link
                 key={m.id}
                 to={m.to}
-                className="py-2 text-slate-700 hover:bg-gray-50 rounded-md"
+                className="py-2 text-black font-semibold hover:bg-gray-50 rounded-md"
                 onClick={() => setOpen(false)}
               >
                 {m.title}
@@ -148,14 +152,16 @@ export default function NavbarStyled({
 
             <Link
               to="/google"
-              className="mt-3 px-4 py-2 bg-gradient-to-r from-[#0ea5a4] to-[#ff7a66] text-white rounded-lg text-center"
+              className="mt-3 px-4 py-2 bg-gradient-to-r from-[#0ea5a4] to-[#ff7a66] text-white rounded-lg text-center font-semibold"
               onClick={() => setOpen(false)}
             >
               Apply Now
             </Link>
+
           </div>
         </div>
       )}
+
     </header>
   );
 }
