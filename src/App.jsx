@@ -16,7 +16,7 @@ import { Link } from "react-router-dom";
 
 export default function GrowthHero({
   logoSrc = "/mnt/data/generated-image-20.png",
-  bgUrl = "/public/7bb7471424350e75d03e6122f5033a5c.jpg",
+  bgUrl = "/7bb7471424350e75d03e6122f5033a5c.jpg",
 }) {
   // counter targets
   const targets = { capitalCr: 100, portfolioCount: 25, founderExp: 25 };
@@ -226,7 +226,7 @@ export default function GrowthHero({
                 className="group block relative rounded-xl overflow-hidden shadow-lg"
                 style={{
                   backgroundImage:
-                    "linear-gradient(180deg, rgba(2,6,23,0.46), rgba(2,6,23,0.24)), url('/public/sector-thumbnail.jpg')",
+                    "linear-gradient(180deg, rgba(2,6,23,0.46), rgba(2,6,23,0.24)), url('/sector-thumbnail.jpg')",
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}

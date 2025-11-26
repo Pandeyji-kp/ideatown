@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 export default function AboutUs({
-    bgUrl = "/public/2f77e8bc2816c2ca68090d76ab8d7d26.jpg",
+    bgUrl = "/2f77e8bc2816c2ca68090d76ab8d7d26.jpg",
 }) {
     const items = [
         {
@@ -29,7 +29,7 @@ export default function AboutUs({
                     specific needs and long-term vision.
                 </>
             ),
-            image: "/public/aad56012be20badfec41abdffd7af819.jpg",
+            image: "/aad56012be20badfec41abdffd7af819.jpg",
         },
         {
             title: "A Proven Track Record",
@@ -68,8 +68,8 @@ export default function AboutUs({
 
             // ⭐ New structure for multiple images
             images: [
-                "/public/986bff98d019390f2d48e829eba0dd35.jpg",
-                "/public/4e6b7e8783e67d822419b8577ec16e86.jpg",
+                "/986bff98d019390f2d48e829eba0dd35.jpg",
+                "/4e6b7e8783e67d822419b8577ec16e86.jpg",
             ]
         },
         {
@@ -81,7 +81,7 @@ export default function AboutUs({
                     Our investment philosophy is built around encouraging entrepreneurship, fostering innovation, generating employment, and contributing to long-term economic growth. Above all, we are committed to empowering businesses to reach their full potential and play a transformative role in building a brighter future for everyone.
                 </>
             ),
-            image: "/public/4e6b7e8783e67d822419b8577ec16e86.jpg",
+            image: "/4e6b7e8783e67d822419b8577ec16e86.jpg",
         },
         {
             title: "Highly experienced team of professionals",
@@ -94,7 +94,7 @@ export default function AboutUs({
                     We look forward to introducing prospective partners to our leadership team <b>once they have completed the business proposal form</b> (insert hyperlink here) and have been shortlisted for further consideration.
                 </>
             ),
-            image: "/public/80a54a73303bdf456eeb3b4d460328a2.jpg",
+            image: "/80a54a73303bdf456eeb3b4d460328a2.jpg",
         },
 
         {

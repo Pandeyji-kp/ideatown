@@ -98,7 +98,7 @@ export default function StylishGoogleFormApply() {
 
                         {/* BACKGROUND WAVE IMAGE */}
                         <img
-                            src="/public/pngtree-white-textured-design-over-a-gradient-orange-background-image_13905315.png"  // <-- change to your image path
+                            src="/pngtree-white-textured-design-over-a-gradient-orange-background-image_13905315.png"  // <-- change to your image path
                             alt="Wave Background"
                             className="absolute inset-0 w-full h-full object-cover object-center"
                         />

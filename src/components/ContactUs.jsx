@@ -8,7 +8,7 @@ export default function ContactUs() {
             <section
                 className="relative w-full h-[60vh] md:h-[70vh] lg:h-[75vh] overflow-hidden flex items-center justify-center text-center"
                 style={{
-                    backgroundImage: "url('/public/pngtree-white-textured-design-over-a-gradient-orange-background-image_13905315.png')",
+                    backgroundImage: "url('/pngtree-white-textured-design-over-a-gradient-orange-background-image_13905315.png')",
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                 }}

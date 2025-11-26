@@ -3,7 +3,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function NavbarStyled({
-  logoSrc = "/public/generated.png",
+  logoSrc = "/generated.png",
   logoAlt = "Idea Town Investments",
 }) {
   const [open, setOpen] = useState(false);
@@ -72,7 +72,7 @@ export default function NavbarStyled({
     >
       {/* Background image behind content (z-0) */}
       <img
-        src="/public/pngtree-white-textured-design-over-a-gradient-orange-background-image_13905315.png"
+        src="/pngtree-white-textured-design-over-a-gradient-orange-background-image_13905315.png"
         alt="decorative background"
         className="absolute inset-0 w-full h-full object-cover object-center z-0 opacity-80 pointer-events-none"
       />
