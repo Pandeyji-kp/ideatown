@@ -11,6 +11,7 @@ import AboutUs from "./components/AboutUs.jsx";
 import ContactUs from "./components/ContactUs.jsx";
 import GoogleFormApply from "./components/GoogleFormApply.jsx";
 import ScrollToTop from "./ScrollToTop.jsx";
+import Quiz from "./components/Quiz.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -25,6 +26,7 @@ createRoot(document.getElementById("root")).render(
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/google" element={<GoogleFormApply />} />
+         <Route path="/quiz" element={<Quiz />} />
       </Routes>
 
       <Footer />
