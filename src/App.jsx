@@ -164,7 +164,7 @@ export default function GrowthHero({
           <div className="text-center">
             <h2 className="text-3xl font-bold text-blue-900">Why Choose Us</h2>
             <p className="mt-3 text-slate-600 text-lg max-w-2xl mx-auto">
-              Smart capital + operational expertise = Hypergrowth for founders.
+              Smart Capital + Operational expertise = Hypergrowth for founders.
             </p>
           </div>
 
@@ -173,7 +173,7 @@ export default function GrowthHero({
             {[
               {
                 title: "Smart Capital",
-                desc: 'Flexible structures including equity, revenue share, or hybrid models. Reason: Added Oxford comma before "or" for clearer separation in list items.',
+                desc: "Flexible structures including equity, revenue share, or hybrid models. ",
               },
               {
                 title: "Growth Engineering",
@@ -181,7 +181,7 @@ export default function GrowthHero({
               },
               {
                 title: "Hands-On Partnership",
-                desc: "Dedicated growth manager + quarterly sessions.",
+                desc: "Dedicated growth manager + Quarterly sessions.",
               },
               {
                 title: "Exit-Ready Focus",
@@ -190,17 +190,29 @@ export default function GrowthHero({
             ].map((p, i) => (
               <div
                 key={i}
-                className="bg-white/80 border border-blue-200 shadow-lg backdrop-blur-md rounded-xl p-6 flex flex-col hover:shadow-xl transition"
+                className="group relative rounded-xl overflow-hidden shadow-lg cursor-pointer bg-blue-900"
               >
-                <h3 className="text-lg font-semibold text-blue-900">
-                  {p.title}
-                </h3>
-                <p className="mt-3 text-sm text-slate-700 flex-grow">
-                  {p.desc}
-                </p>
-                <span className="mt-4 inline-block px-3 py-1 text-xs bg-blue-100 border border-blue-200 text-blue-800 rounded-full">
-                  Partner-first
-                </span>
+                {/* Background Image */}
+                <div
+                  className="absolute inset-0"
+                  style={{
+                    backgroundImage:
+                      "linear-gradient(180deg, rgba(0,0,0,0.35), rgba(0,0,0,0.15)), url('/17248-abstract-light-orange-wave-background-blurred-application-wallpaper.jpg')",
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                  }}
+                />
+
+                {/* Content */}
+                <div className="relative p-6 min-h-[160px] flex flex-col justify-between">
+                  <div>
+                    <span className="bg-white/90 px-2 py-1 rounded font-semibold mb-2">{p.title}</span>
+                    <p className="text-white/90 text-sm mt-1">{p.desc}</p>
+                  </div>
+                </div>
+
+                {/* Hover Overlay */}
+                <div className="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-40 transition" />
               </div>
             ))}
           </div>
