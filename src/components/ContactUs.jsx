@@ -4,11 +4,9 @@ import React from "react";
 export default function ContactUs() {
   return (
     <>
-      {/* ------------------------------------ */}
-      {/* HERO SECTION                          */}
-      {/* ------------------------------------ */}
+      {/* HERO SECTION */}
       <section className="relative w-full h-[55vh] sm:h-[60vh] md:h-[70vh] flex items-center justify-center text-center overflow-hidden">
-        {/* Animation */}
+
         <style>{`
           @keyframes waveSlide {
             0% { transform: translateX(0); }
@@ -23,10 +21,10 @@ export default function ContactUs() {
           className="absolute inset-0 w-full h-full object-cover"
         />
 
-        {/* Blue Overlay */}
+        {/* Overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-blue-900/60 via-blue-800/40 to-blue-600/30"></div>
 
-        {/* Animated Waves */}
+        {/* Animated Wave */}
         <div className="absolute bottom-0 left-0 w-[200%] h-[140px] sm:h-[160px] opacity-70">
           <svg
             className="w-full h-full"
@@ -53,22 +51,21 @@ export default function ContactUs() {
         </div>
       </section>
 
-      {/* ------------------------------------ */}
-      {/* CONTACT INFO SECTION                 */}
-      {/* ------------------------------------ */}
-      <section className="py-16 px-6 max-w-5xl mx-auto">
+      {/* CONTACT SECTION */}
+      <section className="py-14 px-4 sm:px-6 max-w-5xl mx-auto">
 
-        <div className="bg-white/80 backdrop-blur-lg border border-blue-200 shadow-xl rounded-2xl p-8 sm:p-10">
-          <h2 className="text-3xl font-semibold text-blue-900 text-center">
+        <div className="bg-white/80 backdrop-blur-lg border border-blue-200 shadow-xl rounded-2xl p-6 sm:p-10">
+
+          <h2 className="text-2xl sm:text-3xl font-semibold text-blue-900 text-center">
             Get in touch
           </h2>
 
-          <p className="text-center text-slate-600 mt-3 max-w-xl mx-auto">
+          <p className="text-center text-slate-600 mt-3 max-w-xl mx-auto text-sm sm:text-base">
             You can reach us using any of the contact details below.
           </p>
 
-          {/* CONTACT GRID (Fully responsive) */}
-          <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-10">
+          {/* GRID */}
+          <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-8">
 
             {/* EMAIL */}
             <ContactRow
@@ -81,18 +78,7 @@ export default function ContactUs() {
               value="ideatowninvestments@gmail.com"
             />
 
-            {/* PHONE */}
-            <ContactRow
-              icon={
-                <svg className="w-7 h-7 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M2 2.5A1.5 1.5 0 013.5 1h3A1.5 1.5 0 018 2.5V4h4V2.5A1.5 1.5 0 0113.5 1h3A1.5 1.5 0 0118 2.5V17.5A1.5 1.5 0 0116.5 19h-13A1.5 1.5 0 012 17.5V2.5z" />
-                </svg>
-              }
-              title="Phone"
-              value="+44 20 7946 0931"
-            />
-
-            {/* OFFICE LOCATIONS */}
+            {/* LOCATIONS */}
             <ContactRow
               icon={
                 <svg className="w-7 h-7 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
@@ -110,18 +96,18 @@ export default function ContactUs() {
   );
 }
 
-/* ------------------------------------ */
-/* REUSABLE COMPONENT: Contact Row      */
-/* ------------------------------------ */
-
+/* COMPONENT: ContactRow */
 function ContactRow({ icon, title, value }) {
   return (
-    <div className="flex items-start sm:items-center gap-5 sm:gap-6">
-      <div className="p-4 bg-blue-100 rounded-xl">{icon}</div>
+    <div className="flex items-start gap-4 sm:gap-6">
+      <div className="p-4 bg-blue-100 rounded-xl flex-shrink-0">{icon}</div>
 
-      <div>
+      <div className="flex-1 min-w-0">
         <h4 className="text-lg font-semibold text-blue-900">{title}</h4>
-        <p className="text-slate-700 mt-1 break-words">{value}</p>
+
+        <p className="text-slate-700 mt-1 break-words text-sm sm:text-base">
+          {value}
+        </p>
       </div>
     </div>
   );

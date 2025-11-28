@@ -59,7 +59,7 @@ export default function NavbarStyled({
               src={logoSrc}
               alt={logoAlt}
               className="
-  h-[80px]           /* mobile */
+  h-[100px]           /* mobile */
   sm:h-[100px]       /* small screens */
   md:h-[130px]       /* medium screens */
   lg:h-[150px]       /* large screens */
